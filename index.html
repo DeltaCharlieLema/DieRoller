@@ -7,20 +7,26 @@
     <title>Die Roller</title>
 </head>
 <body>
-<header>
-    <h1>Die Roller</h1>
-</header>
     <main>
             <section id="hero">
-                <img src="img/svgexport-1.svg">
+                <img id="die-image" src="img/d20.png">
                 <p id="result">20</p>
             </section>
 
         <fieldset class="die-roller">
             <legend>Die Selector</legend>
-            <h2 id="selected-die">D20</h2>
-            <button>Roll</button>
+<!--            <label for="die-selection">Die Selector:</label>-->
+
+            <select name="Die selection" id="die-selection">
+                <option value="20">D20</option>
+                <option id="d4" value="4">D4</option>
+                <option value="6">D6</option>
+                <option value="10">D10</option>
+            </select>
+<!--            <h2 id="selected-die">D20</h2>-->
+            <button id="roll-button">Roll!</button>
         </fieldset>
+        <script src="index.js"></script>
     </main>
     <footer></footer>
 </body>
