@@ -8,14 +8,16 @@
 </head>
 <body>
     <main>
-            <section id="hero">
-                <img id="die-image" src="img/d20.png">
-                <p id="result">20</p>
-            </section>
+        <div>
 
+        </div>
+        <section id="hero">
+            <img id="die-image" src="img/d20.png">
+            <p id="result">20</p>
+        </section>
         <fieldset class="die-roller">
             <legend>Die Selector</legend>
-<!--            <label for="die-selection">Die Selector:</label>-->
+            <!--            <label for="die-selection">Die Selector:</label>-->
 
             <select name="Die selection" id="die-selection">
                 <option value="20">D20</option>
@@ -23,9 +25,15 @@
                 <option value="6">D6</option>
                 <option value="10">D10</option>
             </select>
-<!--            <h2 id="selected-die">D20</h2>-->
+            <!--            <h2 id="selected-die">D20</h2>-->
             <button id="roll-button">Roll!</button>
         </fieldset>
+        <section id="roll-history">
+            <h2 id="history-header">Roll History</h2>
+            <ul id="roll-list">
+
+            </ul>
+        </section>
         <script src="index.js"></script>
     </main>
     <footer></footer>
